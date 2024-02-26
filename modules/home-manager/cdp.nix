@@ -1,7 +1,7 @@
 { inputs, lib, config, pkgs, ... }:
 
 {
-  xdg.configFile.cdp."config.yaml" = {
+  xdg.configFile."cdp/config.yaml" = {
     text = ''
       editor: nvim
       multiplexer: tmux
