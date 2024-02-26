@@ -1,39 +1,43 @@
 { inputs, lib, config, pkgs, ... }:
 
+let
+  cli = with pkgs; [
+    fzf
+    gh
+    ripgrep
+    fd
+    eza
+    tmux
+    httpie
+    lazygit
+    bat
+  ];
+  chat = with pkgs; [
+    discord
+    whatsapp-for-linux
+    signal-desktop
+    teams-for-linux
+    telegram-desktop
+  ];
+  dev = with pkgs; [
+    cmake
+    gnumake
+    gcc
+    rustup
+    nodejs_20
+    python3
+    go
+    fnm
+    octaveFull
+  ];
+  fun = with pkgs; [
+    spotify
+    stremio
+    steam
+  ];
+in
 {
   home.packages = with pkgs;
-    [
-      spotify
-      stremio
-      synology-drive-client
-      luajitPackages.luarocks
-      fzf
-      ripgrep
-      gh
-      fd
-      cmake
-      gnumake
-      tmux
-      gcc
-      bat
-      eza
-      rustup
-      nodejs_20
-      python3
-      steam
-      go
-      telegram-desktop
-      starship
-      zsh
-      fnm
-      nerdfonts
-      tuxguitar
-      whatsapp-for-linux
-      signal-desktop
-      teams-for-linux
-      octaveFull
-      httpie
-      lazygit
-    ];
+    cli ++ chat ++ dev ++ fun ++ [ synology-drive-client nerdfonts tuxguitar ];
 }
 

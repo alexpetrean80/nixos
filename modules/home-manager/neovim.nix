@@ -5,6 +5,9 @@ let
     fzf
     fd
     ripgrep
+    luajitPackages.luarocks
+    cmake
+    gnumake
   ];
   lsps = with pkgs; [
     rnix-lsp
