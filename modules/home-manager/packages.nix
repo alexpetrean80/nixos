@@ -7,7 +7,6 @@ let
     ripgrep
     fd
     eza
-    tmux
     httpie
     lazygit
     bat

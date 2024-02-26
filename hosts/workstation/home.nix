@@ -3,6 +3,8 @@
 {
   imports = [
     ../../modules/home-manager/git.nix
+    ../../modules/home-manager/tmux.nix
+    ../../modules/home-manager/cdp.nix
     ../../modules/home-manager/packages.nix
     ../../modules/home-manager/neovim.nix
     ../../modules/home-manager/common.nix
