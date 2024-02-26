@@ -28,7 +28,7 @@ antigen apply
 
 alias ls="eza -lgh"
 
-alias lzg="lazygit --use-config-file="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/themes/mocha/rosewater.yml""
+alias lzg="lazygit"
 
 # docker compose aliases
 alias dc="docker compose"
