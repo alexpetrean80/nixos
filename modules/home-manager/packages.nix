@@ -33,7 +33,6 @@ let
   fun = with pkgs; [
     spotify
     stremio
-    steam
   ];
 in
 {

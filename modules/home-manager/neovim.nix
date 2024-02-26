@@ -5,9 +5,10 @@ let
     fzf
     fd
     ripgrep
-    luajitPackages.luarocks
     cmake
     gnumake
+    luajitPackages.luarocks
+    vimPlugins.telescope-fzf-native-nvim
   ];
   lsps = with pkgs; [
     rnix-lsp
@@ -25,7 +26,6 @@ in
 
   xdg.configFile.nvim = {
     recursive = true;
-
     source = ../../config/nvim;
   };
 }
