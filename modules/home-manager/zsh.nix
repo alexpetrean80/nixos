@@ -7,6 +7,10 @@
     enableCompletion = true;
     enableVteIntegration = true;
 
+    shellAliases = {
+      lzg = "lazygit";
+      ls = "eza -lgh";
+    };
     antidote = {
       enable = true;
       plugins = [
