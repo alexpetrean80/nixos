@@ -10,6 +10,11 @@
     zip
     unzip
     home-manager
-    gnome.gnome-tweaks
+    flatpak # TODO check in some months that steam works as a native package
+    linuxKernel.packages.linux_6_1.xpadneo
   ];
+
+  hardware.xpadneo.enable = true;
+
+  services.flatpak.enable = true;
 }
