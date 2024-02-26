@@ -11,8 +11,6 @@
     ../../modules/nixos/system_packages.nix
     ../../modules/nixos/users.nix
     ../../modules/nixos/xserver.nix
-
-    <home-manager/nixos>
   ];
 
   networking.hostName = "dascomp"; # Define your hostname.
