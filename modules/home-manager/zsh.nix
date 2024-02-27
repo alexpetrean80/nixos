@@ -1,6 +1,4 @@
-{ inputs, lib, config, pkgs, ... }:
-
-{
+{...}: {
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
@@ -11,7 +9,6 @@
       export GOPATH="$HOME/go/"
       export PATH="$GOPATH:$HOME/.local/share/npm/bin:$HOME/.local/share/fnm:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
     '';
-
 
     shellAliases = {
       lzg = "lazygit";

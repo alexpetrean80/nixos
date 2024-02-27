@@ -1,6 +1,4 @@
-{ inputs, lib, config, pkgs, ... }:
-
-let
+{pkgs, ...}: let
   utils = with pkgs; [
     fzf
     fd
@@ -15,8 +13,7 @@ let
     gopls
     nodePackages.bash-language-server
   ];
-in
-{
+in {
   programs.neovim = {
     enable = true;
     defaultEditor = true;

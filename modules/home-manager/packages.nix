@@ -1,6 +1,4 @@
-{ inputs, lib, config, pkgs, ... }:
-
-let
+{pkgs, ...}: let
   cli = with pkgs; [
     fzf
     gh
@@ -33,9 +31,7 @@ let
     spotify
     stremio
   ];
-in
-{
+in {
   home.packages = with pkgs;
-    cli ++ chat ++ dev ++ fun ++ [ synology-drive-client nerdfonts tuxguitar ];
+    cli ++ chat ++ dev ++ fun ++ [synology-drive-client nerdfonts tuxguitar];
 }
-
