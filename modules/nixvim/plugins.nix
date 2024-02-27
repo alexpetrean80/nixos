@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./plugins/indent_blankline.nix
     ./plugins/lsp.nix
     ./plugins/lspsaga.nix
     ./plugins/mini.nix
@@ -17,6 +18,8 @@
     gitsigns.enable = true;
     luasnip.enable = true;
     cmp-nvim-lsp.enable = true;
+    cmp-nvim-lua.enable = true;
+    cmp-nvim-lsp-document-symbol.enable = true;
     rainbow-delimiters.enable = true;
     lsp-format.enable = true;
   };

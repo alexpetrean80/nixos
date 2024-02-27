@@ -73,15 +73,13 @@ in {
       mode = "n";
     }
     {
-      action = {__raw = "lua vim.lsp.buf.format({async=true})";};
-      lua = true;
+      action = "<cmd>lua vim.lsp.buf.format({async=true})<CR>";
       key = "<leader>f";
       options = getOpts "Format";
       mode = "n";
     }
     {
-      action = {__raw = "vim.lsp.buf.code_action()";};
-      lua = true;
+      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
       key = "<leader>a";
       options = getOpts "Code action";
       mode = "n";

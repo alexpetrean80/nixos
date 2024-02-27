@@ -6,6 +6,7 @@
     fd
     eza
     httpie
+    glow
     lazygit
     bat
   ];

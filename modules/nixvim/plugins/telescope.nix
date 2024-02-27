@@ -19,8 +19,7 @@ in {
       mode = "n";
     }
     {
-      action = { __raw = "require('telescope.builtin').current_buffer_fuzzy_find({ previewer = false })" };
-      lua = true;
+      action = "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find({ previewer = false })<CR>";
       key = "<leader>F";
       options = getOpts "Fuzzy find";
       mode = "n";

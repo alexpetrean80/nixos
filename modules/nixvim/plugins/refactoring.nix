@@ -25,11 +25,10 @@ in {
 
   programs.nixvim.keymaps = [
     {
-      action = {__raw = "require('refactoring').select_refactor()";};
-      lua = true;
+      action = "<cmd>lua require('refactoring').select_refactor()<CR>";
       key = "<leader>R";
-      mode = ["n" "v"];
       options = getOpts "Refactoring";
+      mode = ["n" "v"];
     }
   ];
 }
