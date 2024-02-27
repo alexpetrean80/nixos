@@ -20,6 +20,7 @@
       dcd = "docker compose down";
       dcr = "docker compose run";
     };
+
     antidote = {
       enable = true;
       plugins = [

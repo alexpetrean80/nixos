@@ -1,10 +1,4 @@
-{
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}: let
+{...}: let
   indent = 2;
 in {
   programs.nixvim.options = {
@@ -23,7 +17,7 @@ in {
     wildmenu = true;
     cursorline = true;
     laststatus = 2;
-    lazyredraw = true;
+    lazyredraw = false;
     list = true;
     listchars = {
       tab = "┊ ";
