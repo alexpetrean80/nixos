@@ -4,7 +4,6 @@
 
     ./binds.nix
     ./input.nix
-    ./default.nix
     ./general.nix
     ./animations.nix
     ./decoration.nix

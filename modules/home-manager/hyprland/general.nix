@@ -5,6 +5,6 @@
     gaps_out = 13;
     border_size = 2;
     "col.active_border" = "0xfff5c2e7";
-    "col.inactive_border" = base;
+    "col.inactive_border" = "0xff1e1e2e";
   };
 }
