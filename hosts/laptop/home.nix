@@ -2,6 +2,7 @@
   imports = [
     ../../modules/home-manager/common.nix
 
+    ../../modules/home-manager/hyprland
     ../../modules/home-manager/apps
     ../../modules/home-manager/term
   ];

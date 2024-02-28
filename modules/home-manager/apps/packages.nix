@@ -10,5 +10,8 @@
     synology-drive-client
     nerdfonts
     tuxguitar
+    pavucontrol
+    wdisplays
+    bluez
   ];
 }
