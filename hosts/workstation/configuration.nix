@@ -8,7 +8,6 @@
     ../../modules/nixos/system_packages.nix
     ../../modules/nixos/users.nix
     ../../modules/nixos/xserver.nix
-    ../../modules/nixos/gnome.nix
   ];
 
   networking.hostName = "dascomp"; # Define your hostname.

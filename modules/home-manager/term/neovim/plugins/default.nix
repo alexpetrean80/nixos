@@ -1,22 +1,23 @@
 {...}: {
   imports = [
-    ./plugins/indent_blankline.nix
-    ./plugins/lsp.nix
-    ./plugins/lspsaga.nix
-    ./plugins/mini.nix
-    ./plugins/noice.nix
-    ./plugins/none-ls.nix
-    ./plugins/nvim-cmp.nix
-    ./plugins/refactoring.nix
-    ./plugins/telescope.nix
-    ./plugins/treesitter.nix
-    ./plugins/which-key.nix
+    ./indent_blankline.nix
+    ./lsp.nix
+    ./lspsaga.nix
+    ./mini.nix
+    ./noice.nix
+    ./none-ls.nix
+    ./nvim-cmp.nix
+    ./refactoring.nix
+    ./telescope.nix
+    ./treesitter.nix
+    ./which-key.nix
   ];
 
   programs.nixvim.plugins = {
     gitblame.enable = true;
     gitsigns.enable = true;
     luasnip.enable = true;
+    comment-nvim.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp-nvim-lua.enable = true;
     cmp-nvim-lsp-document-symbol.enable = true;

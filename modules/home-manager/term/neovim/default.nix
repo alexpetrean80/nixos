@@ -1,12 +1,13 @@
 {inputs, ...}: {
   imports = [
-    # For home-manager
     inputs.nixvim.homeManagerModules.nixvim
-    ../nixvim/options.nix
-    ../nixvim/plugins.nix
-    ../nixvim/config.nix
-    ../nixvim/extraplugins.nix
-    ../nixvim/keymaps.nix
+
+    ./options.nix
+    ./config.nix
+    ./extraplugins.nix
+    ./keymaps.nix
+
+    ./plugins
   ];
 
   programs.nixvim = {
