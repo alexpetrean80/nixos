@@ -47,7 +47,7 @@
       "SUPER, mouse_up, workspace, e-1"
     ];
     bindr = [
-      "SUPER, Return, exec, kitty"
+      "SUPER, Return, exec, alacritty"
       "SUPER SHIFT, Return, exec, firefox"
       "SUPER, Space, exec, wofi --show drun"
     ];

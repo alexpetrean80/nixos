@@ -46,8 +46,8 @@
           {=%Y %B}
           {calendar}
         '';
-        format-alt = " {=%d/%m/%Y}";
-        format = " {=%H:%M}";
+        format-alt = '' {=%d/%m/%Y}'';
+        format = '' {=%H:%M}'';
       };
       backlight = {
         device = "intel_backlight";
@@ -70,23 +70,10 @@
           critical = 15;
         };
         format = "{icon}";
+        format-alt = "{icon}";
         format-charging = "";
         format-plugged = "";
-        format-alt = "{icon}";
-        format-icons = [
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-        ];
+        format-icons = ["" "" "" "" "" "" "" "" "" "" "" ""];
       };
       pulseaudio = {
         format = "{icon} {volume}%";
