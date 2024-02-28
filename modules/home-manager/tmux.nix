@@ -31,7 +31,7 @@
           set -g @catppuccin_status_right_separator_inverse "no"
           set -g @catppuccin_status_fill "icon"
           set -g @catppuccin_status_connect_separator "no"
-          set -g @catppuccin_flavour 'macchiato' # or frappe, macchiato, mocha
+          set -g @catppuccin_flavour 'mocha' # or frappe, macchiato, mocha
           set -g @catppuccin_directory_text "#{pane_current_path}"
 
         '';

@@ -26,6 +26,7 @@
     python3
     go
     fnm
+    wezterm
     octaveFull
   ];
   fun = with pkgs; [
