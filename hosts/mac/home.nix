@@ -1,14 +1,12 @@
-{ ... }: {
+{...}: {
   imports = [
-    ../../modules/tmux.nix
-    ../../modules/home-manager/nixvim.nix
-    ../../modules/home-manager/starship.nix
-    ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/apps.nix
+    ../../modules/home-manager/common.nix
+    ../../modules/home-manager/term.nix
   ];
 
   home = {
     username = "alexp";
     homeDirectory = "/Users/alexp";
-    stateVersion = 24.05;
   };
 }

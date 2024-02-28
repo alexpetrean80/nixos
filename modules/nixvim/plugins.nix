@@ -15,7 +15,6 @@
 
   programs.nixvim.plugins = {
     gitblame.enable = true;
-    comment-nvim.enable = true;
     gitsigns.enable = true;
     luasnip.enable = true;
     cmp-nvim-lsp.enable = true;
