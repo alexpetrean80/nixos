@@ -13,5 +13,7 @@
     pavucontrol
     wdisplays
     bluez
+    playerctl
+    pcmanfm
   ];
 }

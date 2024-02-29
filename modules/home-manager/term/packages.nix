@@ -7,7 +7,6 @@
     eza
     httpie
     glow
-    lazygit
     bat
     cmake
     gnumake

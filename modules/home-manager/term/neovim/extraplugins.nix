@@ -7,5 +7,5 @@
     vim-sandwich
     lualine-nvim
   ];
-  programs.nixvim.extraConfigLua = lib.readFile ../../../../config/lualine.lua;
+  programs.nixvim.extraConfigLua = lib.readFile ../../../../config/nvim/lualine.lua;
 }

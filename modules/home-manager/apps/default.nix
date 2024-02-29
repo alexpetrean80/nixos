@@ -1,3 +1,3 @@
 {...}: {
-  imports = [./packages.nix ./alacritty.nix];
+  imports = [./packages.nix ./alacritty.nix ./kitty.nix];
 }

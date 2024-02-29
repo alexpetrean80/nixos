@@ -6,6 +6,7 @@
     ./starship.nix
     ./tmux.nix
     ./zsh.nix
+    ./lazygit.nix
 
     ./neovim
   ];
