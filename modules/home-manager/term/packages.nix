@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    gnupg1compat
     fzf
     gh
     ripgrep
@@ -16,6 +17,6 @@
     python3
     go
     fnm
-    octaveFull
+    aws-vault
   ];
 }

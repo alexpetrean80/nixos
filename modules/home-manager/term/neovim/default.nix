@@ -13,8 +13,9 @@
   programs.nixvim = {
     enable = true;
     enableMan = true;
-    colorschemes.catppuccin = {
+    colorschemes.base16 = {
       enable = true;
+      colorscheme ="catppuccin-mocha";
     };
     globals = {
       mapleader = " ";

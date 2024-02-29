@@ -1,8 +1,9 @@
 {...}: {
+  
   programs.git = {
-    enable = true;
+    enable = false;
     userName = "Alex Petrean";
-    userEmail = "alex_petrean@icloud.com";
+    userEmail = "alex-tudor.petrean@snyk.io";
 
     diff-so-fancy.enable = true;
     signing = {
