@@ -15,6 +15,5 @@
   environment.systemPackages = with pkgs.gnome; [
     gnome-tweaks
     gnome-shell-extensions
-    gnome-boxes
   ];
 }

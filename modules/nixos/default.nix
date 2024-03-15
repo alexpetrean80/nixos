@@ -2,11 +2,11 @@
   imports = [
     ./docker.nix
     ./gnome.nix
-    ./libvirt.nix
     ./locale.nix
     ./sound.nix
     ./system_packages.nix
     ./users.nix
+    ./virtualbox.nix
     ./xserver.nix
   ];
 
