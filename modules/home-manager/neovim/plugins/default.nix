@@ -7,7 +7,7 @@
     ./mini.nix
     ./noice.nix
     ./none-ls.nix
-    # ./nvim-cmp.nix
+    ./nvim-cmp.nix
     ./refactoring.nix
     ./telescope.nix
     ./treesitter.nix
