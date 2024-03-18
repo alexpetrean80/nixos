@@ -1,5 +1,5 @@
 {...}: {
-  imports = [./lazygit.nix];
+  imports = [./lazygit.nix ./github-cli.nix];
 
   programs.git = {
     enable = true;

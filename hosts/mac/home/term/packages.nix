@@ -11,5 +11,6 @@
     darwin.CF
     darwin.Libc
     darwin.Security
+    jira-cli-go
   ];
 }

@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     fzf
-    gh
     ripgrep
     fd
     eza
