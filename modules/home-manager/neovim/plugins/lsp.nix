@@ -25,6 +25,7 @@
       terraformls.enable = true;
       tsserver.enable = true;
       yamlls.enable = true;
+      zls.enable = true;
     };
   };
 }

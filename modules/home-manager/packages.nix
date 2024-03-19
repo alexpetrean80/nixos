@@ -19,5 +19,7 @@
     gnupg
     poetry
     jetbrains-toolbox
+    valgrind
+    zig
   ];
 }
