@@ -18,5 +18,6 @@
     fnm
     gnupg
     poetry
+    jetbrains-toolbox
   ];
 }
