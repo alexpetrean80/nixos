@@ -17,7 +17,10 @@
   programs.nixvim.plugins = {
     gitblame.enable = true;
     gitsigns.enable = true;
+    fugitive.enable = true;
+    neogit.enable = true;
     comment-nvim.enable = true;
+    neocord.enable = true;
     helm.enable = true;
     notify.enable = true;
     rainbow-delimiters.enable = true;
