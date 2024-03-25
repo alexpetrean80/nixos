@@ -18,8 +18,8 @@
     fnm
     gnupg
     poetry
-    jetbrains-toolbox
-    valgrind
-    zig
+    # jetbrains-toolbox
+    # valgrind
+    # zig
   ];
 }
