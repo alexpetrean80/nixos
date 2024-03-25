@@ -4,6 +4,9 @@
     registrations = {
       "<leader>b" = "Buffers";
       "<leader>l" = "LSP";
+      "<leader>lc" = "Calls";
+      "<leader>ld" = "Diagnostics";
+      "<leader>lf" = "Find";
     };
     window = {
       margin = {

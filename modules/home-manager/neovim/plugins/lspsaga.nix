@@ -44,7 +44,7 @@ in {
     }
     {
       action = "<cmd>Lspsaga rename<CR>";
-      key = "<leader>lr";
+      key = "<leader>r";
       options = getOpts "Rename";
       mode = "n";
     }
