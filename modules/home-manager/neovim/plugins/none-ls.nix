@@ -4,7 +4,6 @@
     enableLspFormat = true;
     sources = {
       diagnostics = {
-        eslint.enable = true;
         flake8.enable = true;
         golangci_lint.enable = true;
         luacheck.enable = true;

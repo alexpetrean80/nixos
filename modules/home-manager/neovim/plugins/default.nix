@@ -1,13 +1,14 @@
 {...}: {
   imports = [
     ./copilot.nix
+    ./efm.nix
     ./harpoon.nix
     ./indent_blankline.nix
     ./lsp.nix
     ./lspsaga.nix
     ./mini.nix
     ./noice.nix
-    ./none-ls.nix
+    # ./none-ls.nix
     ./nvim-cmp.nix
     ./refactoring.nix
     ./telescope.nix
