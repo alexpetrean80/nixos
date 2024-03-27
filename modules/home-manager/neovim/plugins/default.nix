@@ -8,7 +8,6 @@
     ./lspsaga.nix
     ./mini.nix
     ./noice.nix
-    # ./none-ls.nix
     ./nvim-cmp.nix
     ./refactoring.nix
     ./telescope.nix
@@ -21,7 +20,7 @@
     gitsigns.enable = true;
     fugitive.enable = true;
     neogit.enable = true;
-    comment-nvim.enable = true;
+    comment.enable = true;
     neocord.enable = true;
     helm.enable = true;
     notify.enable = true;

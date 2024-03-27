@@ -8,6 +8,7 @@
       bashls.enable = true;
       clangd.enable = true;
       dockerls.enable = true;
+      efm.enable =true;
       eslint.enable = true;
       gopls.enable = true;
       helm-ls.enable = true;

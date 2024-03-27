@@ -7,11 +7,11 @@
         linter = "shellcheck";
       };
       c = {
-        formatter = "clang-format";
+        formatter = "clang_format";
         linter = "cppcheck";
       };
       "c++" = {
-        formatter = "clang-format";
+        formatter = "clang_format";
         linter = "cppcheck";
       };
       docker = {
@@ -22,20 +22,19 @@
       };
       go = {
         formatter = ["gofmt" "goimports" "golines"];
-        linter = "golangci-lint";
+        linter = "golangci_lint";
       };
       html = {
         formatter = "prettier";
-        linter = "htmlhint";
       };
       javascript = {
         formatter = "prettier";
         linter = "eslint";
       };
-      javascriptreact = {
-        formatter = "prettier";
-        linter = "eslint";
-      };
+      # javascriptreact = {
+      #   formatter = "prettier";
+      #   # linter = "eslint";
+      # };
       json = {
         formatter = "jq";
         linter = "jq";
@@ -48,12 +47,12 @@
         linter = "checkmake";
       };
       markdown = {
-        formatter = "prettier";
+        formatter = "mdformat";
         linter = "markdownlint";
       };
       nix = {
-        formatter = "alejandra";
-        linter = "statix";
+        formatter = "nixfmt";
+        # linter = "statix";
       };
       python = {
         formatter = "black";
@@ -77,10 +76,10 @@
         formatter = "prettier";
         linter = "eslint";
       };
-      typescriptreact = {
-        formatter = "prettier";
-        linter = "eslint";
-      };
+      # typescriptreact = {
+      #   formatter = "prettier";
+      #   # linter = "eslint";
+      # };
       yaml = {
         formatter = "prettier";
         linter = "yamllint";
