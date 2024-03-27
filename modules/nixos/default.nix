@@ -6,7 +6,6 @@
     ./sound.nix
     ./system_packages.nix
     ./users.nix
-    ./virtualbox.nix
     ./xserver.nix
   ];
 
