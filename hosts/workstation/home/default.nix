@@ -7,6 +7,7 @@
     ../../../modules/home-manager/kitty
     ../../../modules/home-manager/neovim
     ../../../modules/home-manager/tmux
+    ../../../modules/home-manager/wezterm
     ../../../modules/home-manager/vscode
     ../../../modules/home-manager/starship
     ../../../modules/home-manager/zsh

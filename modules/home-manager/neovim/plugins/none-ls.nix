@@ -3,9 +3,6 @@
     enable = true;
     enableLspFormat = true;
     sources = {
-      code_actions = {
-        shellcheck.enable = true;
-      };
       diagnostics = {
         eslint.enable = true;
         flake8.enable = true;
