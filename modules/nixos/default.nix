@@ -13,7 +13,9 @@
     systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
   };
-
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0"
+  ];
   networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

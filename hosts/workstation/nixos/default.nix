@@ -6,7 +6,7 @@
 
   networking.hostName = "dascomp";
   boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_6_6;
     initrd.kernelModules = ["amdgpu"];
     kernelParams = [
       "video=DP-2:3840x2160@60"
