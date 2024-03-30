@@ -1,7 +1,7 @@
 {...}: {
   imports = [
-    ../../../modules/nixos
     ./hardware-configuration.nix
+    ../../modules
   ];
 
   networking.hostName = "daslaptop";

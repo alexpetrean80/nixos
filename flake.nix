@@ -27,17 +27,17 @@
     nixosConfigurations = {
       workstation = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/workstation/nixos];
+        modules = [./nixos/hosts/workstation];
       };
       laptop = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop/nixos];
+        modules = [./nixos/hosts/laptop];
       };
     };
 
     darwinConfigurations = {
       F59V2P7FXY = nix-darwin.lib.darwinSystem {
-        modules = [./hosts/mac/configuration.nix];
+        modules = [./nix-darwin/configuration.nix];
       };
     };
 
@@ -45,17 +45,17 @@
       "alexp@workstation" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/workstation/home];
+        modules = [./home-manager/hosts/workstation];
       };
       "alexp@laptop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop/home];
+        modules = [./home-manager/hosts/laptop];
       };
       "alexp@workMac" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.aarch64-darwin;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/mac/home];
+        modules = [./home-manager/hosts/mac];
       };
     };
   };
