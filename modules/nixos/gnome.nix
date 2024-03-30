@@ -16,4 +16,15 @@
     gnome-tweaks
     gnome-shell-extensions
   ];
+
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-tour
+    xterm
+    epiphany
+    gnome-connections
+  ]) ++ (with pkgs.gnome; [
+    gnome-maps
+    gnome-weather
+    gnome-music
+  ]);
 }
