@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, lib,...}: {
   services.xserver = {
     displayManager.gdm.enable = true;
 
@@ -27,4 +27,5 @@
     gnome-weather
     gnome-music
   ]);
+  programs.ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
 }
