@@ -1,4 +1,8 @@
-{pkgs, lib,...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   services.xserver = {
     displayManager.gdm.enable = true;
 
@@ -17,15 +21,14 @@
     gnome-shell-extensions
   ];
 
-  environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     xterm
     epiphany
     gnome-connections
-  ]) ++ (with pkgs.gnome; [
-    gnome-maps
-    gnome-weather
     gnome-music
-  ]);
+    gnome-weather
+    gnome-maps
+  ];
   programs.ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
 }
