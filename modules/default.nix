@@ -1,16 +1,14 @@
 {...}: {
   imports = [
     ./docker.nix
-    ./gnome.nix
     ./locale.nix
     ./sound.nix
     ./system_packages.nix
     ./users.nix
-    ./xserver.nix
   ];
 
   boot.loader = {
-    systemd-boot.enable = true;
+    # systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
   };
   nixpkgs.config.permittedInsecurePackages = [
@@ -22,8 +20,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true;
-  };
+  hardware.graphics.enable = true;
+  hardware.opengl.driSupport32Bit = true;
 }

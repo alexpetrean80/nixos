@@ -23,6 +23,10 @@
         specialArgs = {inherit inputs outputs;};
         modules = [./hosts/laptop];
       };
+      vmware = nixpkgs.lib.nixosSystem {
+	specialArgs = {inherit inputs outputs;};
+      modules = [./hosts/vmware-workstation];
+      };
     };
   };
 }
