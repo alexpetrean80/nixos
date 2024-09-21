@@ -1,6 +1,8 @@
 {pkgs, ...}: {
   imports = [
-    ../../modules
+    ../../common
+    ../../common/docker.nix
+    ../../common/kde.nix
     ./hardware-configuration.nix
   ];
 
@@ -9,8 +11,6 @@
     kernelPackages = pkgs.linuxPackages_6_6;
     initrd.kernelModules = ["amdgpu"];
     kernelParams = [
-      "video=DP-2:3840x2160@60"
-      "video=HDMI-A-1:1920x1080@60"
       "amdgpu.sg_display=0"
     ];
   };
@@ -25,6 +25,14 @@
       driversi686Linux.amdvlk
     ];
   };
-  hardware.opengl.driSupport32Bit = true;
+
+  programs = {
+    steam = {
+      enable = true;
+      package = pkgs.steam.override {withJava = true;};
+      gamescopeSession.enable = true;
+    };
+  java.enable = true;
+  };
   system.stateVersion = "23.11";
 }

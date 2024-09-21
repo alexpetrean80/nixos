@@ -6,5 +6,11 @@
       extraGroups = ["networkmanager" "wheel" "docker" "libvirtd"];
       shell = pkgs.zsh;
     };
+    iul = {
+      isNormalUser = true;
+      description = "Iulia";
+      extraGroups = ["networkmanager" "wheel"];
+      shell = pkgs.zsh;
+    };
   };
 }
