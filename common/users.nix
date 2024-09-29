@@ -3,7 +3,7 @@
     alexp = {
       isNormalUser = true;
       description = "Alex Petrean";
-      extraGroups = ["networkmanager" "wheel" "docker" "libvirtd"];
+      extraGroups = ["networkmanager" "wheel"];
       shell = pkgs.zsh;
     };
     iul = {

@@ -6,4 +6,6 @@
       setSocketVariable = true;
     };
   };
+
+  users.users.alexp.extraGroups = ["docker"];
 }

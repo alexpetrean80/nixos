@@ -8,20 +8,18 @@
   outputs = {
     self,
     nixpkgs,
-    nix-darwin,
-    home-manager,
     ...
   } @ inputs: let
     inherit (self) outputs;
   in {
     nixosConfigurations = {
-      workstation = nixpkgs.lib.nixosSystem {
+      dasserver = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/workstation];
+        modules = [./hosts/dasserver];
       };
-      laptop = nixpkgs.lib.nixosSystem {
+      daslaptop = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop];
+        modules = [./hosts/daslaptop];
       };
     };
   };

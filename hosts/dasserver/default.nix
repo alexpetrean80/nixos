@@ -2,11 +2,13 @@
   imports = [
     ../../common
     ../../common/docker.nix
-    # ../../common/desktops/kde.nix
+    ../../common/kvm.nix
+    ../../common/ssh.nix
     ./hardware-configuration.nix
   ];
 
-  networking.hostName = "dascomp";
+  networking.hostName = "dasserver";
+
   boot = {
     kernelPackages = pkgs.linuxPackages_6_6;
     initrd.kernelModules = ["amdgpu"];
@@ -37,18 +39,6 @@
     neovim
     git
   ];
-
-  services.openssh = {
-    enable = true;
-    ports = [22];
-    settings = {
-      PasswordAuthentication = true;
-      AllowUsers = ["alexp"];
-      UseDns = true;
-      X11Forwarding = false;
-      PermitRootLogin = "no";
-    };
-  };
 
   networking.firewall = {
     enable = false;
