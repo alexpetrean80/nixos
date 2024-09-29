@@ -2,7 +2,7 @@
   imports = [
     ../../common
     ../../common/docker.nix
-    ../../common/desktops/kde.nix
+    # ../../common/desktops/kde.nix
     ./hardware-configuration.nix
   ];
 
@@ -29,17 +29,8 @@
   programs = {
     steam = {
       enable = true;
-      package = pkgs.steam.override {withJava = true;};
       gamescopeSession.enable = true;
     };
-  #  java.enable = true;
-  };
-
-  services.sunshine = {
-    enable = true;
-    autoStart = true;
-    capSysAdmin = true;
-    openFirewall = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -47,19 +38,22 @@
     git
   ];
 
-  networking.firewall = {
+  services.openssh = {
     enable = true;
-    allowedTCPPorts = [47984 47989 47990 48010];
-    allowedUDPPortRanges = [
-      {
-        from = 47998;
-        to = 48000;
-      }
-      {
-        from = 8000;
-        to = 8010;
-      }
-    ];
+    ports = [22];
+    settings = {
+      PasswordAuthentication = true;
+      AllowUsers = ["alexp"];
+      UseDns = true;
+      X11Forwarding = false;
+      PermitRootLogin = "no";
+    };
   };
+
+  networking.firewall = {
+    enable = false;
+    allowedTCPPorts = [22];
+  };
+
   system.stateVersion = "23.11";
 }
