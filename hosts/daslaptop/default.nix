@@ -22,6 +22,7 @@
     nerdfonts
     synology-drive-client
     xwaylandvideobridge
+    netbird-ui
   ];
 
   programs.virt-manager.enable = true; # can be used to manage non-local hosts as well
