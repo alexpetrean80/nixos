@@ -4,6 +4,7 @@
     ../../common/docker.nix
     ../../common/kvm.nix
     ../../common/ssh.nix
+    ../../common/samba.nix
     ./hardware-configuration.nix
   ];
 
