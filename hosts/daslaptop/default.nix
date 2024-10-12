@@ -23,6 +23,7 @@
     synology-drive-client
     xwaylandvideobridge
     netbird-ui
+    stremio
   ];
 
   programs.virt-manager.enable = true; # can be used to manage non-local hosts as well
