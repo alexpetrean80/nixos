@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./docker.nix
     ./locale.nix
     ./sound.nix
     ./system_packages.nix
