@@ -1,16 +1,11 @@
-{...}: {
+{ ... }: {
   imports = [
     /etc/nixos/hardware-configuration.nix
-
     ./hardware.nix
     ./packages.nix
-
     ../../common
-
-    ../../common/virtualization/kvm.nix
     ../../common/virtualization/docker.nix
-
-    ../../common/desktops/kde.nix
+    ../../common/desktops/hypr.nix
   ];
 
   networking.hostName = "daslaptop";
