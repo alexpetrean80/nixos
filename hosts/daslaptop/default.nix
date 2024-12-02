@@ -6,6 +6,7 @@
     ../../common
     ../../common/virtualization/docker.nix
     ../../common/desktops/hypr.nix
+    ../../common/desktops/kde.nix
   ];
 
   networking.hostName = "daslaptop";

@@ -1,17 +1,13 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
+  imports = [ ../displaymanagers/sddm.nix ];
+
   services = {
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-    };
     desktopManager.plasma6.enable = true;
     keyd = {
       enable = true;
       keyboards = {
         default = {
-          ids = ["*"];
+          ids = [ "*" ];
           settings = {
             main = {
               capslock = "esc";

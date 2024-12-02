@@ -1,4 +1,6 @@
 { pkgs, ... }: {
+  imports = [../displaymanagers/sddm.nix];
+
   programs.hyprland.enable = true;
   environment.systemPackages = with pkgs;[
     wl-clipboard
@@ -19,5 +21,4 @@
       wayland.enable = true;
     };
   };
-
 }
