@@ -7,6 +7,7 @@
     ../../common/virtualization/docker.nix
     ../../common/desktops/hypr.nix
     ../../common/desktops/kde.nix
+    ../../common/desktops/sway.nix
   ];
 
   networking.hostName = "daslaptop";
