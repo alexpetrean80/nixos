@@ -1,22 +1,21 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
-    ../../common
-    ../../common/docker.nix
-    ../../common/kvm.nix
-    ../../common/ssh.nix
-    ./hardware-configuration.nix
+    ../../modules/nixos
+    ../../modules/nixos/docker.nix
+    ../../modules/nixos/ssh.nix
+    ./hardware-configuration.nix../
   ];
 
   networking.hostName = "dasserver";
 
   boot = {
     kernelPackages = pkgs.linuxPackages_6_6;
-    initrd.kernelModules = ["amdgpu"];
+    initrd.kernelModules = [ "amdgpu" ];
     kernelParams = [
       "amdgpu.sg_display=0"
     ];
   };
-  services.xserver.videoDrivers = ["modesetting"];
+  services.xserver.videoDrivers = [ "modesetting" ];
 
   hardware.graphics = {
     extraPackages = with pkgs; [
@@ -42,7 +41,7 @@
 
   networking.firewall = {
     enable = false;
-    allowedTCPPorts = [22];
+    allowedTCPPorts = [ 22 ];
   };
 
   system.stateVersion = "23.11";

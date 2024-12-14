@@ -1,8 +1,7 @@
-{...}: {
+{ ... }: {
   imports = [
     ./locale.nix
     ./sound.nix
-    ./system_packages.nix
     ./users.nix
     ./xserver.nix
   ];
@@ -16,11 +15,11 @@
     "electron-25.9.0"
   ];
 
-  programs.nix-ld.enable = true; 
+  programs.nix-ld.enable = true;
 
   networking.networkmanager.enable = true;
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nixpkgs.config.allowUnfree = true;
 
